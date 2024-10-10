@@ -1,0 +1,67 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3700b3;
+}
+
+input {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #6200ea;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 5px;
+}
