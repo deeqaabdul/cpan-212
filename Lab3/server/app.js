@@ -1,30 +1,26 @@
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const multer = require('multer');
-
-const app = express();
-
-app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-
-const upload = multer({ dest: 'uploads/' });
-
-app.post('/save/multiple', upload.array('files'), (req, res) => {
-  res.send('Multiple files uploaded successfully.');
-});
-
-app.post('/save/single', upload.single('file'), (req, res) => {
-  res.send('Single file uploaded successfully.');
-});
-
-app.get('/', (req, res) => {
-  res.send('Server is running');
-});
-
 const PORT = process.env.PORT || 8000;
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const path = require("path");
+const save_router = require("./routers/save_router");
+const fetch_router = require("./routers/fetch_router");
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(cors());
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/save", save_router);
+app.use("/fetch", fetch_router);
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`http://localhost:${PORT}`);
+});
+
+app.use("", (req, res) => {
+  res.status(404).send("Page not found");
 });
