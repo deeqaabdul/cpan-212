@@ -11,7 +11,7 @@ const MONGO_URI = process.env.MONGODB_KEY;
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGO_URI)
   .then(() => console.log('MongoDB connected successfully 🎉'))
   .catch((err) => console.error('Error connecting to MongoDB:', err));
 
