@@ -1,0 +1,129 @@
+.product-details {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #121212;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+    }
+  
+  .product-image {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-info {
+    flex: 2;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  .product-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+  }
+  
+  .product-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    color: #ff4081;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px rgba(255, 64, 129, 0.8);
+  }
+  
+  .quantity-selector {
+    margin: 15px 0;
+  }
+  
+  .quantity-selector label {
+    color: #ffffff; 
+    margin-right: 10px;
+  }
+  
+  .quantity-selector input {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+  }
+  
+  .add-to-cart-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #ff79b0;
+    transform: scale(1.05);
+  }
+  
+  .related-products {
+    margin-top: 30px;
+  }
+  
+  .related-products h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .related-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .related-product-card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .related-product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .related-product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

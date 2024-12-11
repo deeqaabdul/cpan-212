@@ -1,0 +1,77 @@
+body, .app {
+  background: linear-gradient(120deg, #121212, #181818, #252525);
+  background-size: 600% 600%;
+  animation: gradientAnimation 8s ease infinite;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.title, .app-header {
+  font-size: 2.5em;
+  color: #ff69b4;
+  text-align: center;
+  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+}
+
+.app-header {
+  padding: 20px;
+}
+
+.card, .profile-info, .search-results, .form-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .form-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 20px rgba(255, 105, 180, 0.5);
+}
+
+.button, .search-button, .logout-button {
+  background-color: #ff69b4;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(255, 105, 180, 0.4);
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #ff69b4;
+  border-radius: 6px;
+  background: #121212;
+  color: #fff;
+  margin-top: 10px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+  border-color: #ff85c0;
+  outline: none;
+}
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}

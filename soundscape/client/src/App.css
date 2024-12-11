@@ -1,0 +1,40 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #181818;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #121212;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #ff85c0;
+  text-decoration: underline;
+}
+
+.header, .footer {
+  background-color: #121212;
+  padding: 15px;
+  text-align: center;
+  color: #ff69b4;
+}
+
+.footer {
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+}

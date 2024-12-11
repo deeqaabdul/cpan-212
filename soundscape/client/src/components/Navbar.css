@@ -1,0 +1,32 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo .title {
+    font-size: 2em;
+    color: #ff69b4;
+    text-decoration: none;
+  }
+  
+  .navbar-links a {
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ff85c0;
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.6);
+  }
+  

@@ -1,0 +1,102 @@
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 64, 129, 0.7), 0 0 10px rgba(255, 64, 129, 0.5), 0 0 15px rgba(255, 64, 129, 0.3);
+      transform: scale(1);
+    }
+    50% {
+      text-shadow: 0 0 15px rgba(255, 64, 129, 1), 0 0 20px rgba(255, 64, 129, 0.7), 0 0 30px rgba(255, 64, 129, 0.5);
+      transform: scale(1.05);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(255, 64, 129, 0.7), 0 0 10px rgba(255, 64, 129, 0.5), 0 0 15px rgba(255, 64, 129, 0.3);
+      transform: scale(1);
+    }
+  }
+  
+  .homepage {
+    background: linear-gradient(to right, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url('https://path/to/your/background-image.jpg') no-repeat center center/cover; /* Add your own image */
+    color: #fff;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .explore-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0.7);
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  .explore-button:hover {
+    background-color: #ff79b0;
+  }
+  
+  .featured-section {
+    margin-top: 40px;
+  }
+  
+  .featured-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  .playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .playlist-card {
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0.7);
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  .playlist-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .playlist-card img {
+    border-radius: 8px;
+    width: 100%; 
+    height: auto;
+  }
+  
+  .playlist-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .playlist-card p {
+    font-size: 0.9rem;
+    color: #bbb; 
+  }
+  

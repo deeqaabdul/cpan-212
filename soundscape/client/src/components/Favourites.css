@@ -1,0 +1,24 @@
+/* Favorites.css */
+.favorites-page {
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.favorite-item {
+    background-color: #444444;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.favorite-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff85c0, 0 0 20px #ff85c0;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
